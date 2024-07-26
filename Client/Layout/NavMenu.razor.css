@@ -1,14 +1,86 @@
+.mynavbar-brand-left {
+    color: #6f42c1;
+    font-weight: 700;
+    font-family: Calibri;
+    font-size: 3rem;
+    /*   font-size: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+    display: block;*/
+}
+
+.mynavbar-brand-right {
+    color: #d63384;
+    font-weight: 700;
+    font-family: Calibri;
+    font-size: 3rem;
+}
+
+.mynavbar-brand {
+    margin-top: 1.0rem;
+}
+
+.mynav-menu-header {
+    font-size: 5rem !important;
+}
+
+.accordion-button {
+    padding: .625rem 1.625rem;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.0rem;
+    color: #495057;
+    font-weight: 600;
+}
+
+.mynav-menu-link {
+    padding: 0.625rem;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.0rem;
+    color: #495057;
+    font-weight: 400;
+}
+
+.mynav-menu-link:hover {
+        color: #d63384;
+}
+
+.mynav-menu-link:active {
+        color: #d63384;
+}
+
+.accordion-header{
+    border:none;
+}
+
+.accordion-button {
+    border: none !important;
+}
+
+.accordion-item {
+    border: none !important;
+    margin-bottom: 2.5rem;
+}
+
+.accordion {
+    --bs-accordion-active-bg: #d63384;
+    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-btn-focus-box-shadow: none;
+    margin-top: 8em;
+}
+
+.mynav-accordion{
+    margin-top: 5em;
+}
+
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.top-row {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
 .navbar-brand {
     font-size: 1.1rem;
+    background-color: #ffffff;
 }
 
 .bi {
@@ -55,15 +127,15 @@
         line-height: 3rem;
     }
 
-.nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.37);
-    color: white;
-}
+        .nav-item ::deep a.active {
+            background-color: rgba(255,255,255,0.37);
+            color: white;
+        }
 
-.nav-item ::deep a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
+        .nav-item ::deep a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
 
 @media (min-width: 641px) {
     .navbar-toggler {
@@ -74,7 +146,7 @@
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
-    
+
     .nav-scrollable {
         /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);

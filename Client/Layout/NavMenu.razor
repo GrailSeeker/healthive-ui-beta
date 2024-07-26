@@ -1,13 +1,73 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Static Web Apps</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+﻿<div class="mynavbar-brand ps-3 navbar bg-white">
+	<div class="container-fluid text-center">
+		@* <a class="mynavbar-brand" href="">Healthive.</a> *@
+		<h3 class="mynavbar-brand-left">Healt<label class="mynavbar-brand-right">hive.</label></h3>
+		@* <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+			<span class="navbar-toggler-icon"></span>
+		</button> *@
+	</div>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+<div class="accordion accordion-flush ynav-accordion" id="accordionFlushExample">
+	<div class="accordion-item">
+		<h2 class="accordion-header">			
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+				MY DATA
+			</button>
+		</h2>
+		<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<a class="mynav-menu-link" href="#">Add New</a>
+			</div>
+		</div>
+		<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<a class="mynav-menu-link" href="#">Modify Existing</a>
+			</div>
+		</div>
+		<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<a class="mynav-menu-link" href="#">View</a>
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+				MY FAMILY
+			</button>
+		</h2>
+		<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<a class="mynav-menu-link" href="#">Add New Member</a>
+			</div>
+		</div>
+		<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<a class="mynav-menu-link" href="#">Update Member Details</a>
+			</div>
+		</div>
+		<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<a class="mynav-menu-link" href="#">View Members</a>
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<h2 class="accordion-header">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="collapseThree">
+				SETTINGS
+			</button>
+		</h2>
+		<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+			<div class="accordion-body">
+				<a class="mynav-menu-link" href="#">View Logs</a>
+			</div>
+		</div>		
+	</div>
+</div>
+
+@* <div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div class="nav-item px-3">
             <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
@@ -24,16 +84,21 @@
                 <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Weather
             </NavLink>
         </div>
+        <div class="nav-item px-3">
+            <NavLink class="nav-link" href="healthive">
+                <span class="bi bi-list-nested-nav-menu" aria-hidden="true"></span> Heathive
+            </NavLink>
+        </div>
     </nav>
-</div>
+</div> *@
 
 @code {
-    private bool collapseNavMenu = true;
+	private bool collapseNavMenu = true;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+	private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
+	private void ToggleNavMenu()
+	{
+		collapseNavMenu = !collapseNavMenu;
+	}
 }

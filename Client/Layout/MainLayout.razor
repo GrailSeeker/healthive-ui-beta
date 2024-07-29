@@ -11,17 +11,19 @@
 </head>
 
 <div class="page">
-	<div class="sidebar">
-	<NavMenu />
-	</div> 
+	<div class="sidebar" id="mainSidebar">
+		<NavMenu />
+	</div>
 
 	<main>
-		<div class="top-row mynav-top">
-			<div class="row">
-				<div class="col"><p class="float-start">Hello!</p></div>
+		<nav class="navbar shadow" style="background:#ffffff; height: 6.5em;">
+			<div class="container-fluid justify-content-start">
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainSidebar" aria-controls="mainSidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 			</div>
-		</div>
-		<div class="container">
+		</nav>		
+		<div class="container-fluid">
 			@Body
 		</div>
 	</main>

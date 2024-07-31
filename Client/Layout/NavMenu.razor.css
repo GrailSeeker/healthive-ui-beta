@@ -1,7 +1,6 @@
 .mynavbar-brand-left {
     color: #6f42c1;
     font-weight: 700;
-    font-family: Calibri;
     font-size: 3rem;
     /*   font-size: 1.5rem;
     text-align: center;
@@ -12,8 +11,21 @@
 .mynavbar-brand-right {
     color: #d63384;
     font-weight: 700;
-    font-family: Calibri;
     font-size: 3rem;
+}
+
+.mynavbar-brand-secondary-left {
+    color: #495057;
+    font-weight: 200;
+    font-size: 1.0rem;
+    margin-top: -0.5em;
+}
+
+.mynavbar-brand-secondary-right {
+    color: #495057;
+    font-weight: 200;
+    font-size: 1.0rem;
+    margin-top: -0.5em;
 }
 
 .mynavbar-brand {
@@ -33,6 +45,11 @@
     font-weight: 600;
 }
 
+.my-accordion-button {    
+    margin-bottom: -2.2em;
+    margin-top: 7.2em;
+}
+
 .mynav-menu-link {
     padding: 0.625rem;
     position: relative;
@@ -40,18 +57,19 @@
     font-size: 1.0rem;
     color: #495057;
     font-weight: 400;
+    margin-left: 2em;
 }
 
-.mynav-menu-link:hover {
+    .mynav-menu-link:hover {
         color: #d63384;
-}
+    }
 
-.mynav-menu-link:active {
+    .mynav-menu-link:active {
         color: #d63384;
-}
+    }
 
-.accordion-header{
-    border:none;
+.accordion-header {
+    border: none;
 }
 
 .accordion-button {
@@ -60,17 +78,21 @@
 
 .accordion-item {
     border: none !important;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.0rem;
 }
 
 .accordion {
-    --bs-accordion-active-bg: #d63384;
-    --bs-accordion-active-color: #ffffff;
+    --bs-accordion-active-bg: #e2d9f3;
+    --bs-accordion-active-color: #6f42c1;
     --bs-accordion-btn-focus-box-shadow: none;
-    margin-top: 8em;
+    margin-top: 4em;
 }
 
-.mynav-accordion{
+.accordion-body:hover {
+    /*background-color: #e2d9f3;*/
+}
+
+.mynav-accordion {
     margin-top: 5em;
 }
 

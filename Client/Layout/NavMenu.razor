@@ -1,18 +1,27 @@
 ﻿<div class="mynavbar-brand ps-3 navbar bg-white">
-	<div class="container-fluid text-center">
+	<div class="container-fluid text-center" style="display:inline;">
 		@* <a class="mynavbar-brand" href="">Healthive.</a> *@
-		<h3 class="mynavbar-brand-left">Healt<label class="mynavbar-brand-right">hive.</label></h3>
+		<h3 class="mynavbar-brand-left">Healt<label class="mynavbar-brand-right">hive.</label></h3>		
+		<h6 class="mynavbar-brand-secondary-left">Your health data.<label class="mynavbar-brand-secondary-right">At your fingertips.</label></h6>
 		@* <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
 			<span class="navbar-toggler-icon"></span>
 		</button> *@
 	</div>
 </div>
 
+<div>
+	<button class="accordion-button my-accordion-button" type="button">
+		<i class="bi bi-house-heart" style="font-size:1.2em;"></i>
+		&nbsp;HOME
+	</button>
+</div>
+
 <div class="accordion accordion-flush ynav-accordion" id="accordionFlushExample">
 	<div class="accordion-item">
 		<h2 class="accordion-header">			
 			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-				MY DATA
+				<i class="bi bi-clipboard2-data" style="font-size:1.2em;"></i>
+				&nbsp;MY DATA
 			</button>
 		</h2>
 		<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -32,9 +41,10 @@
 		</div>
 	</div>
 	<div class="accordion-item">
-		<h2 class="accordion-header">
-			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				MY FAMILY
+		<h2 class="accordion-header">			
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+				<i class="bi bi-people" style="font-size:1.2em;"></i>
+				&nbsp;MY FAMILY
 			</button>
 		</h2>
 		<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -55,8 +65,9 @@
 	</div>
 	<div class="accordion-item">
 		<h2 class="accordion-header">
-			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				SETTINGS
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+				<i class="bi bi-gear" style="font-size:1.2em;"></i>
+				&nbsp;SETTINGS
 			</button>
 		</h2>
 		<div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">

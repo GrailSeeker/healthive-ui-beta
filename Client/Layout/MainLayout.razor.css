@@ -1,7 +1,7 @@
 .page {
     position: relative;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 body {
@@ -35,23 +35,23 @@ main {
         text-decoration: none;
     }
 
-    .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
-        text-decoration: underline;
-    }
+        .top-row ::deep a:hover, .top-row ::deep .btn-link:hover {
+            text-decoration: underline;
+        }
 
-    .top-row ::deep a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
+        .top-row ::deep a:first-child {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
 
 @media (max-width: 640.98px) {
     .top-row {
         justify-content: space-between;
     }
 
-    .top-row ::deep a, .top-row ::deep .btn-link {
-        margin-left: 0;
-    }
+        .top-row ::deep a, .top-row ::deep .btn-link {
+            margin-left: 0;
+        }
 }
 
 @media (min-width: 641px) {
@@ -72,14 +72,171 @@ main {
         z-index: 1;
     }
 
-    .top-row.auth ::deep a:first-child {
-        flex: 1;
-        text-align: right;
-        width: 0;
-    }
+        .top-row.auth ::deep a:first-child {
+            flex: 1;
+            text-align: right;
+            width: 0;
+        }
 
     .top-row, article {
         padding-left: 2rem !important;
         padding-right: 1.5rem !important;
     }
+}
+
+.my-offcanvas {
+    width: 30em !important;
+}
+
+.my-navbar-button {
+    margin-left: 2em;
+}
+
+.my-offcanvas-div-button {
+    padding: 2em 2em 2em 2em;
+    font-size: 1.2em;
+}
+
+.my-offcanvas-button-close {
+    padding: 2em 2em 2em 2em;
+    font-size: small;
+    color: #d63384 !important;
+}
+
+.accordion-button {
+    padding: .625rem 1.625rem;
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #495057;
+    font-weight: 300;
+}
+
+.my-accordion-button {
+    margin-bottom: -2.2em;
+    margin-top: 2em;
+}
+
+.mynav-menu-link {
+    padding: 0.625rem;
+    position: relative;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #432874;
+    font-weight: 300;
+    margin-left: 3.2em;
+}
+
+    .mynav-menu-link:hover, .mynav-menu-link:active {
+        color: #d63384;
+    }
+
+.accordion-header {
+    border: none;
+}
+
+.accordion-button {
+    border: none !important;
+}
+
+.accordion-item {
+    border: none !important;
+    margin-bottom: 2.0rem;
+}
+
+.accordion {
+    --bs-accordion-active-bg: #ffffff;
+    --bs-accordion-active-color: #495057;
+    --bs-accordion-btn-focus-box-shadow: none;
+    --bs-accordion-border-width: 0;
+    margin-top: 4em;
+}
+
+.accordion-body:hover {
+    /*background-color: #e2d9f3;*/
+}
+
+.mynav-accordion {
+    margin-top: 5em;
+}
+
+.mynavbar-brand-left {
+    color: #6f42c1;
+    font-weight: 500;
+    font-size: 3rem;
+    align-content: flex-start;
+    margin-left: 0.5em;
+}
+
+.mynavbar-brand-right {
+    color: #d63384;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.mynavbar-profile-div {
+    margin-left: calc(100% - 15em);
+    margin-top: -4em;
+}
+
+.mynavbar-profile-div-icon {
+    font-size: 2.8em;
+    color: #495057;
+}
+
+.mynavbar-profile-div-menu {
+    margin-top: -1.5em;
+}
+
+.mynavbar-profile-div-menu-button, .mynavbar-profile-div-menu-button:hover, .mynavbar-profile-div-menu-button:focus, .mynavbar-profile-div-menu-button:active {
+    width: 7.5em;
+    font-size: 1.2em;
+    text-align: start;
+    background-color: #ffffff;
+    border: none;
+    color: #495057;
+    font-weight: 500;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.mynavbar-profile-div-menu-popup-text {
+    padding: 0.625rem;
+    position: relative;
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #432874;
+    font-weight: 300;
+    margin-left: 1.0em;
+}
+
+    .mynavbar-profile-div-menu-popup-text:hover, .mynavbar-profile-div-menu-popup-text:active {
+        padding: 0.625rem;
+        position: relative;
+        text-decoration: none;
+        font-size: 0.9em;
+        color: #d63384;
+        font-weight: 300;
+        margin-left: 1.0em;
+        background-color: none;
+    }
+
+.mynavbar-profile-div-menu-popup {
+    width: 15em !important;
+    margin-left: calc(100% - 15em);
+    margin-top: 1.0em !important;
+    outline: none;
+}
+
+    .mynavbar-profile-div-menu-popup:hover {
+        background-color: none;
+    }
+
+    .mynavbar-profile-div-menu-popup > li > a:hover {
+        background-image: none;
+        background-color: #00000000;
+    }
+
+.dropdown-divider {
+    color: #f7f9fc;
 }
